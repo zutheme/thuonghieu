@@ -1,0 +1,426 @@
+
+
+.game {
+
+	position: relative;
+
+	margin: 0px auto;
+
+	padding: 0px;
+
+}
+
+.area-game {
+
+	position: relative;
+
+	margin-top: 15px;
+
+	padding: 10px;
+
+	margin-bottom: 15px; 
+
+}
+
+.area-game ul {
+
+	list-style: none;
+
+	margin:0;
+
+	padding:0;
+
+}
+
+.area-game ul > li {
+
+	width:100px;
+
+	height: 100px;
+
+	float: left;
+
+	position: relative;
+
+	border: 1px solid #ccc;
+
+	padding: 50px;
+
+}
+
+.area-game ul > li canvas {
+
+    width: 100%;
+
+    height: auto;
+
+    cursor: pointer;
+
+}
+
+.init-game{
+
+	position: relative;
+
+	background-image: url('../images/background-screen.jpg');
+
+	background-repeat: no-repeat;
+
+	background-size: 100% 100%;
+
+	height: 800px; 
+
+  	background-position: 0 0;
+
+	z-index: 1;
+
+}
+
+/*.init-game .filter*/
+.init-game .filter .notification {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    color: #000;
+    background: #fff;
+	z-index: 1;
+}
+.init-game .filter{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* background: rgba(0,0,0,0.3); */
+    padding-top: 0%;
+    z-index: 1;
+    display: block;
+}
+.init-game .filter .failed,
+
+.init-game .filter .result {
+
+	position: absolute;
+
+	padding: 15px 15px;
+
+	background: rgba(255,255,255,0.6);
+
+	width: 400px;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+	top: 5%;
+
+	left: 40%;
+
+	z-index: 3;
+
+}
+
+.init-game .filter a{
+
+	text-decoration: none;
+
+}
+
+.init-game .filter button {
+
+	padding: 5px 15px;
+
+	color: #222;
+
+	font-weight: 400;
+
+	font-size: 1.5em;
+
+	background: #ededed;
+
+}
+
+.init-game .filter .btn {
+	padding: 5px 15px;
+    color: #1B81CC;
+    font-weight: 500;
+    /* background: rgb(67,131,200,0.9); */
+    background: #fff;
+    font-size: 1.3em;
+    border: 1px solid #1B81CC;
+    border-radius: 3px;
+}
+.init-game .filter .btn-restart {
+	position: relative;
+	margin-top: 20%;
+}
+.init-game .filter .btn-play-again {
+    position: absolute;
+    margin-top: 55%;
+    left: 47%;
+}
+.init-game .filter .btn-open-gift {
+	position: relative;
+	margin-top: 50%;
+}
+.init-game .filter .btn-get-gift {
+    position: absolute;
+    margin-top: 50%;
+    left: 46.8%;
+}
+.init-game .filter .btn-share {
+   max-width: 100px;
+}
+a.bnt-share::before {
+	background-image: url(../images/icon-share.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    content: "";
+    position: relative;
+    top: 5px;
+    right: 5px;
+} 
+.init-game .filter .btn-reg {
+
+	padding: 5px 15px;
+
+    color: #222;
+
+    font-weight: 400;
+
+    font-size: 1.5em;
+
+    background: #ededed;
+
+}
+
+.init-game .filter .btn-start {
+
+	position: relative;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	margin-top: 15px; 
+
+}
+
+.init-game .filter .frm-register {
+
+	position: relative;
+
+	padding: 5px 5px;
+
+	max-width: 400px;
+
+	background: #fff;
+
+	margin-top: 15%;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	z-index: 9999;
+
+}
+
+.init-game .filter .frm-register input {
+
+	padding: 5px 5px;
+
+	color: #000;
+
+	font-size: 14px;
+
+}
+
+.init-game .filter .frm-register input.control {
+
+	margin: 5px 10px;
+
+	width: 80%;
+
+	padding: 5px 10px;
+
+}
+
+.init-game .filter .frm-register .btn-reg-gift {
+
+	padding: 10px 15px;
+
+	text-align:center;
+
+	color: #fff;
+
+	text-transform: uppercase;
+
+	font-weight: 500;
+
+	font-size: 16px;
+
+	background: #1B7FCB;
+
+	border: 1px solid #ddd;
+
+}
+
+.init-game .filter .frm-register .btn-reg-gift:hover {
+
+	background: 
+
+}
+
+.init-game .filter .frm-register .sel{
+
+	margin-top: 5px;
+
+	margin-bottom: 10px;
+
+	padding: 5px 15px;
+
+	text-align: center;
+
+}
+
+.init-game .filter .frm-register .sel .local-service{
+
+	padding: 5px 15px;
+
+	font-size: 14px;
+
+}
+
+.init-game .filter .frm-register .btn-area {
+	margin: 15px auto;
+	width: 100%;
+	text-align:center;
+}
+
+.init-game .filter .last-screen {
+	position: relative;
+	max-width: 500px;
+	padding: 10px 25px;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(255,255,255,0.8);
+}
+
+.init-game .filter .last-screen h2 {
+	font-size: 25px;
+	font-weight: 500;
+	color: #000;
+}
+
+.init-game .filter .last-screen .begin {
+	color: #1A80CB;
+	font-weight: 600;
+}
+
+.init-game .filter .last-screen p {
+	font-size: 18px;
+	font-weight: 400;
+	color: #000;
+}
+
+.init-game .filter .last-screen .titlegame{
+	color: #1A80CB;
+	font-weight: 600;
+}
+
+.init-game .filter .last-screen .like{
+	color: #1A80CB;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.init-game .filter .last-screen .no-more {
+	font-size: 1.1em;
+	font-weight: 500;
+	color:#0C71BF;
+}
+
+@media (max-width: 768px){
+	.init-game .filter .last-screen {
+		position: relative;
+		max-width: 500px;
+		padding: 10px 25px;
+		margin-left: 5px;
+		margin-right: 5px;
+		background: rgba(255,255,255,0.8);
+	}
+	.init-game {
+	    position: relative;
+	    background-image: url(../images/background-screen-mobile.jpg);
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	    height: 100%;
+	    background-position: 0 0;
+	    z-index: 1;
+	}
+	.init-game .filter .btn-get-gift {
+	    position: absolute;
+	    margin-top: 115%;
+	    left: 38%;
+	}
+	.init-game .filter .btn-open-gift {
+	    position: relative;
+	    margin-top: 115%;
+	}
+	.init-game .filter .btn-play-again {
+	    position: absolute;
+	    margin-top: 130%;
+	    left: 40%;
+	}
+	.init-game .filter .frm-register {
+	    position: relative;
+	    padding: 5px 5px;
+	    max-width: 330px;
+	    background: #fff;
+	    margin-top: 20%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    z-index: 9999;
+	}
+}
+@media (min-width: 991px) and (max-width: 1280px){
+	.init-game .filter .btn-open-gift {
+	    position: relative;
+	    margin-top: 50%;
+	}
+	.init-game .filter .btn-play-again {
+	    position: absolute;
+	    margin-top: 55%;
+	    left: 46.5%;
+	}
+	.init-game .filter .btn-get-gift {
+	    position: absolute;
+	    margin-top: 50%;
+	    left: 46%;
+	}
+}
+
+@media (min-width: 1280px) {
+	.init-game .filter .btn-open-gift {
+		position: relative;
+		margin-top: 34%;
+	}
+	.init-game .filter .btn-get-gift {
+	    position: absolute;
+	    margin-top: 35%;
+	    left: 46.8%;
+	}
+	.init-game .filter .btn-play-again {
+	    position: absolute;
+	    margin-top: 39%;
+	    left: 47%;
+	}
+}
